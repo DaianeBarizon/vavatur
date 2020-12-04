@@ -1,0 +1,98 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"  android:stretchColumns="*"
+    android:background="#ffffff">
+    <!-- Linha 1 com uma coluna-->
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="50dp"
+            android:text="Petrópolis, Monte Verde"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </TableRow>
+    <!-- Linha 2 com 3 colunas -->
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0000CF"
+            android:gravity="center"
+            android:padding="20dip"
+            android:text="Linha 3 Coluna 2"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:text="Linha 3 Coluna 3"
+            android:layout_weight="1"
+            android:background="#0000AF"
+            android:textColor="#000000"
+            android:padding="20dip"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:text="Linha 3 Coluna 2"
+            android:layout_weight="1"
+            android:background="#0000CF"
+            android:textColor="#000000"
+            android:padding="20dip"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:text="Linha 3 Coluna 3"
+            android:layout_weight="1"
+            android:background="#0000AF"
+            android:textColor="#000000"
+            android:padding="20dip"
+            android:gravity="center"/>
+    </TableRow>
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="#1976D2"
+        android:onClick="Login"
+        android:text="Voltar"
+        android:textColor="#E4EBE4" />
+</TableLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

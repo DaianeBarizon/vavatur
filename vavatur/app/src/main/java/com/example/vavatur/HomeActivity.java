@@ -14,16 +14,22 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Button btnEntrar = findViewById(R.id.btnEntrar);
-        btnEntrar.setOnClickListener(this);
+        Button btnEntrar1 = findViewById(R.id.btnEntrar1);
+        btnEntrar1.setOnClickListener(this);
+
+        Button btnEntrar2 = findViewById(R.id.btnEntrar2);
+        btnEntrar2.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnEntrar:
-                Intent it = new Intent(this, MarkSeatActivity.class);
-                startActivity(it);
+            case R.id.btnEntrar1:
+                Intent it1 = new Intent(this, MarkSeatActivity.class);
+                startActivity(it1);
+            case R.id.btnEntrar2:
+                Intent it2 = new Intent(this, MarkSeat2Activity.class);
+                startActivity(it2);
                 break;
         }
     }

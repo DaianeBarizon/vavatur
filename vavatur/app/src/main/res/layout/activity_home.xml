@@ -18,7 +18,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
-        android:id="@+id/btnEntrar"
+        android:id="@+id/btnEntrar1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -26,6 +26,18 @@
         android:layout_marginRight="20dp"
         android:background="#1976D2"
         android:onClick="Login"
-        android:text="Marcar assento"
+        android:text="Marcar assento veículo 1"
+        android:textColor="#E4EBE4" />
+
+    <Button
+        android:id="@+id/btnEntrar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="#1976D2"
+        android:onClick="Login"
+        android:text="Marcar assento veículo 2"
         android:textColor="#E4EBE4" />
 </LinearLayout>
