@@ -79,6 +79,4 @@ public class MarkSeatActivity extends AppCompatActivity implements View.OnClickL
                 break;
         }
     }
-
-
 }

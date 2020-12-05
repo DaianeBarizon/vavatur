@@ -9,7 +9,6 @@
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
         android:gravity="center_horizontal">
-
         <TextView
             android:id="@+id/txtLogin"
             android:layout_width="260dp"
