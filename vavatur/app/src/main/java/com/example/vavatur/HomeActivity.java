@@ -1,18 +1,33 @@
 package com.example.vavatur;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
+    TextView mensagemCliente;
+    Bundle extras;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        mensagemCliente = (TextView) findViewById(R.id.txtLogin);
+        extras = getIntent().getExtras();
+
+        String nome = "cliente";
+        String id = "ID";
+        if (extras != null) {
+            nome = extras.getString("nome");
+            id = extras.getString("id");
+        }
+
+        mensagemCliente.setText("Olá, " + nome + "!!");
 
         Button btnEntrar1 = findViewById(R.id.btnEntrar1);
         btnEntrar1.setOnClickListener(this);
