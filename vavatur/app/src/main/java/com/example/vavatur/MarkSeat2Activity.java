@@ -1,8 +1,8 @@
 package com.example.vavatur;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MarkSeat2Activity extends AppCompatActivity {
 
